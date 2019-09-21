@@ -1,6 +1,6 @@
 export interface CommitlintConfigJira {
   rules: {
-    [key: string]: (number | string)[]
+    [key: string]: number | (number | string)[]
   }
 }
 declare const commitlintConfigJira: CommitlintConfigJira

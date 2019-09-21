@@ -1,6 +1,3 @@
-#test plugin
-packages/commitlint-plugin-jira-tests
-
 # Logs
 logs
 *.log
