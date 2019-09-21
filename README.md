@@ -2,7 +2,7 @@
   <img width="200" height="200"
     src="https://raw.githubusercontent.com/Gherciu/multipack/master/logo.png">
   <h1>multipack</h1>
-  <p>Shareable commitlint config enforcing Jira commits style</p>
+  <p>Shareable commitlint config enforcing Jira commits messages style</p>
 </div>
 
 ![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-config-jira)
