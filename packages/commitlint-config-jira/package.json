@@ -29,6 +29,7 @@
     "watch": "cross-env NODE_ENV=development webpack -w"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
     "cross-env": "^5.2.1",
     "rimraf": "^2.6.3",
     "ts-loader": "^6.1.0",
@@ -36,8 +37,6 @@
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
   },
-  "dependencies": {
-    "commitlint-config-jira-utils": "^1.0.0"
-  },
+  "dependencies": {},
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }

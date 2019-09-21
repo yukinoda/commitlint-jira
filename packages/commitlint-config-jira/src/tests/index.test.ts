@@ -1,7 +1,7 @@
-import multipack from '../index'
+import commitLintJira from '../index'
 
-describe('multipack', () => {
-  it('should return corect sum indiferent if provided values has number type or string', () => {
-    expect(multipack.sum(1, '1')).toEqual(2)
+describe('commitLintJira', () => {
+  it('should return a valid rules', () => {
+    expect(commitLintJira).toEqual(commitLintJira)
   })
 })

@@ -1,11 +1,9 @@
-import { toNumber } from 'commitlint-config-jira-utils'
-import { Multipack, TSum } from '../@types'
+import { CommitLintJira } from '../@types'
 
-const sum: TSum = (a, b) => toNumber(a) + toNumber(b)
-
-const multipack: Multipack = {
-  sum,
+export const commitLintJira: CommitLintJira = {
+  rules: {
+    'header-max-length': [2, 'always', 72],
+  },
 }
 
-export { sum }
-export default multipack
+export default commitLintJira

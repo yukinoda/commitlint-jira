@@ -1,10 +1,12 @@
-export type TSum = (a: number | string, b: number | string) => number
+export type TRuleReturn = (string | number | (string | number)[])[]
 
-export interface Multipack {
-  sum: TSum
+export type TRuleFuncReturn = () => Promise<TRuleReturn>
+
+export interface CommitLintJira {
+  rules: {
+    [key: string]: TRuleReturn | TRuleFuncReturn
+  }
 }
+declare const commitLintJira: CommitLintJira
 
-export const sum: TSum
-declare const multipack: Multipack
-
-export default multipack
+export default commitLintJira
