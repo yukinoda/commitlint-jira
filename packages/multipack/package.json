@@ -1,7 +1,7 @@
 {
-  "name": "multipack-core",
-  "description": "Simple monorepo template repository.",
-  "version": "1.0.12",
+  "name": "commitlint-config-jira",
+  "description": "Shareable commitlint config enforcing Jira commits messages style",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -9,16 +9,18 @@
     "url": "https://gherciu.github.io/portfolio/"
   },
   "keywords": [
-    "lerna",
-    "monorepo",
+    "commitlint",
+    "jira-commitlint",
+    "jira-style",
+    "jira",
     "multipack"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/multipack"
+    "url": "https://github.com/commitlint-config-jira"
   },
   "bugs": {
-    "url": "https://github.com/multipack/issues"
+    "url": "https://github.com/commitlint-config-jira/issues"
   },
   "main": "./build/index.js",
   "types": "./@types",
