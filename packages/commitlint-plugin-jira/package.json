@@ -1,5 +1,5 @@
 {
-  "name": "commitlint-config-jira",
+  "name": "commitlint-plugin-jira",
   "description": "Shareable commitlint config enforcing Jira commits messages style",
   "version": "1.0.0",
   "license": "MIT",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/commitlint-config-jira"
+    "url": "https://github.com/commitlint-plugin-jira"
   },
   "bugs": {
-    "url": "https://github.com/commitlint-config-jira/issues"
+    "url": "https://github.com/commitlint-plugin-jira/issues"
   },
   "main": "./build/index.js",
   "types": "./@types",
