@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="200" height="200"
+  <img width="300" height="200"
     src="https://raw.githubusercontent.com/Gherciu/commitlint-config-jira/master/logo.png">
   <h1>commitlint-config-jira</h1>
   <p>Shareable commitlint config enforcing Jira commits messages style</p>
