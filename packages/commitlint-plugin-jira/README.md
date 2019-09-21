@@ -1,18 +1,18 @@
 <div align="center">
   <img width="300" height="200"
-    src="https://raw.githubusercontent.com/Gherciu/commitlint-plugin-jira/master/logo.png">
-  <h1>commitlint-plugin-jira</h1>
+    src="https://raw.githubusercontent.com/Gherciu/commitlint-jira/master/logo.png">
+  <h1>commitlint-jira</h1>
   <p>Shareable commitlint config enforcing Jira commits messages style</p>
 </div>
 
-![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-plugin-jira)
+![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)
 
 ## Getting started.
 
 ##### Install dependencies
 
 ```bash
-npm install --save-dev @commitlint/cli commitlint-plugin-jira
+npm install --save-dev @commitlint/cli commitlint-plugin-jira commitlint-config-jira
 ```
 
 ##### Configure commitlint to use jira commits messages style config
@@ -21,6 +21,7 @@ npm install --save-dev @commitlint/cli commitlint-plugin-jira
 // commitlint.config.js
 module.exports = {
   plugins: ['commitlint-plugin-jira'],
+  extends: ['commitlint-config-jira'],
 }
 ```
 
@@ -47,7 +48,7 @@ module.exports = {
 
 ## Author
 
-**[@Gherciu/commitlint-plugin-jira](https://github.com/Gherciu/commitlint-plugin-jira)** © [GHERCIU](https://github.com/Gherciu), Released under the [MIT](https://github.com/Gherciu/commitlint-plugin-jira/blob/master/LICENSE) License.<br>
-Authored and maintained by GHERCIU with help from contributors ([list](https://github.com/Gherciu/commitlint-plugin-jira/contributors)).
+**[@Gherciu/commitlint-jira](https://github.com/Gherciu/commitlint-jira)** © [GHERCIU](https://github.com/Gherciu), Released under the [MIT](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE) License.<br>
+Authored and maintained by GHERCIU with help from contributors ([list](https://github.com/Gherciu/commitlint-jira/contributors)).
 
-#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/Gherciu/commitlint-plugin-jira)
+#### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/Gherciu/commitlint-jira)

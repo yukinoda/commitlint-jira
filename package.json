@@ -1,5 +1,5 @@
 {
-  "name": "commitlint-plugin-jira-monorepo",
+  "name": "commitlint-jira-monorepo",
   "description": "Shareable commitlint config enforcing Jira commits messages style",
   "version": "1.0.0",
   "license": "MIT",
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/commitlint-plugin-jira"
+    "url": "https://github.com/commitlint-jira"
   },
   "bugs": {
-    "url": "https://github.com/commitlint-plugin-jira/issues"
+    "url": "https://github.com/commitlint-jira/issues"
   },
   "scripts": {
     "build:packages": "lerna run build",

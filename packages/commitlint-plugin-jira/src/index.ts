@@ -1,9 +1,13 @@
-import { CommitLintJira } from '../@types'
+import { CommitlintPluginJira, TRuleFuncReturn } from '../@types'
 
-export const commitLintJira: CommitLintJira = {
+const test: TRuleFuncReturn = () => {
+  throw Error('aaa')
+}
+
+export const commitlintPluginJira: CommitlintPluginJira = {
   rules: {
-    'header-max-length': [2, 'always', 72],
+    test,
   },
 }
 
-export default commitLintJira
+export default commitlintPluginJira

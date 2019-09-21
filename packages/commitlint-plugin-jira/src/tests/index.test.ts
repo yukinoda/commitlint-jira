@@ -1,7 +1,8 @@
-import commitLintJira from '../index'
+import commitlintPluginJira from '../index'
 
-describe('commitLintJira', () => {
-  it('should return a valid rules', () => {
-    expect(commitLintJira).toEqual(commitLintJira)
+describe('commitlintPluginJira', () => {
+  it('should return a valid config', () => {
+    expect(commitlintPluginJira).toHaveProperty('rules')
+    expect(Object.keys(commitlintPluginJira.rules).length).toBeGreaterThan(0)
   })
 })

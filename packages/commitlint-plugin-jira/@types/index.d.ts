@@ -1,12 +1,10 @@
-export type TRuleReturn = (string | number | (string | number)[])[]
+export type TRuleFuncReturn = () => void
 
-export type TRuleFuncReturn = () => Promise<TRuleReturn>
-
-export interface CommitLintJira {
+export interface CommitlintPluginJira {
   rules: {
-    [key: string]: TRuleReturn | TRuleFuncReturn
+    [key: string]: TRuleFuncReturn | (number | string)[]
   }
 }
-declare const commitLintJira: CommitLintJira
+declare const commitlintPluginJira: CommitlintPluginJira
 
-export default commitLintJira
+export default commitlintPluginJira
