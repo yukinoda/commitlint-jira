@@ -11,7 +11,9 @@
 
 ##### Install dependencies
 
-- Setup project: `npm install --save-dev @commitlint/cli commitlint-config-jira`
+```bash
+npm install --save-dev @commitlint/cli commitlint-config-jira
+```
 
 ##### Configure commitlint to use jira commits messages style config
 
