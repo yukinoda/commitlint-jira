@@ -5,13 +5,24 @@ export interface Rules {
 
 export interface TCommitlintJiraConstants {
   JIRA_RULES: Rules
+  COMMIT_MESSAGE_SEPARATOR: string
+  COMMIT_TASK_IDS_SEPARATOR: string
+}
+
+export type TParseCommitMessage = (
+  commitMessage: string,
+) => {
+  taskIds: string[]
+  messageBody: string
 }
 
 export interface CommitlintJiraUtils {
+  parseCommitMessage: TParseCommitMessage
   commitlintJiraConstants: TCommitlintJiraConstants
 }
 
 export const commitlintJiraConstants: TCommitlintJiraConstants
-declare const commitlintJiraUtils: CommitlintJiraUtils
+export const parseCommitMessage: TParseCommitMessage
 
+declare const commitlintJiraUtils: CommitlintJiraUtils
 export default commitlintJiraUtils

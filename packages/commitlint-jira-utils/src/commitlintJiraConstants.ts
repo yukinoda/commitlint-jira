@@ -3,4 +3,5 @@ export const JIRA_RULES = {
   taskIdMinLength: 'jira-task-id-min-length',
 }
 
-export const test = 'test'
+export const COMMIT_MESSAGE_SEPARATOR = ':'
+export const COMMIT_TASK_IDS_SEPARATOR = ','
