@@ -14,6 +14,8 @@
 ```bash
 npm install --save-dev @commitlint/cli commitlint-plugin-jira commitlint-config-jira
 ```
+[commitlint-config-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-config-jira) - is a *** recomended ** config who contain preconfigured rules for jira commits messages style. See all rules in description below
+[commitlint-plugin-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-plugin-jira) - is a plugin that implement all jira commits messages style rules and validate commit messages
 
 ##### Configure commitlint to use jira commits messages style config
 
@@ -36,6 +38,26 @@ module.exports = {
     }
   }
 }
+```
+
+## Rules
+`jira-task-id-max-length` - this rule check if jira task id length is loonger that the provided value.
+
+```bash
+// ❌ Bad commit messages
+git commit -m"IB-2121212121212121: My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121: My commit message body"
+```
+
+`jira-task-id-min-length` - this rule check if jira task id length is shorter that the provided value.
+
+```bash
+// ❌ Bad commit messages
+git commit -m"I-1: My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121: My commit message body"
+git commit -m"IB-21: My commit message body"
 ```
 
 ## Contributing
