@@ -1,8 +1,6 @@
 {
   "private": true,
   "name": "commitlint-jira-e2e-tests",
-  "types": "./@types",
-  "scripts": {},
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "ts-jest": "^24.1.0",
