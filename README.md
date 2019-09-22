@@ -14,7 +14,7 @@
 ```bash
 npm install --save-dev @commitlint/cli commitlint-plugin-jira commitlint-config-jira
 ```
-[commitlint-config-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-config-jira) - is a *** recomended ** config who contain preconfigured rules for jira commits messages style. See all rules in description below
+[commitlint-config-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-config-jira) - is a ** recomended ** config who contain preconfigured rules for jira commits messages style. See all rules in description below
 [commitlint-plugin-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-plugin-jira) - is a plugin that implement all jira commits messages style rules and validate commit messages
 
 ##### Configure commitlint to use jira commits messages style config
