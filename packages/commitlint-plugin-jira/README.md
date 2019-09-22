@@ -1,8 +1,8 @@
 <div align="center">
   <img width="300" height="200"
     src="https://raw.githubusercontent.com/Gherciu/commitlint-jira/master/logo.png">
-  <h1>commitlint-jira</h1>
-  <p>Shareable commitlint config enforcing Jira commits messages style</p>
+  <h1>commitlint-plugin-jira</h1>
+  <p>A plugin that implement all jira commits messages style rules and validate commit messages. Part of <a href="https://github.com/Gherciu/commitlint-jira">commitlint-jira</a> monorepo</p>
 </div>
 
 ![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)
@@ -14,6 +14,9 @@
 ```bash
 npm install --save-dev @commitlint/cli commitlint-plugin-jira commitlint-config-jira
 ```
+
+- [commitlint-config-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-config-jira) - is a **recomended** config who contain preconfigured rules for jira commits messages style. See all rules in description below
+- [commitlint-plugin-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-plugin-jira) - is a plugin that implement all jira commits messages style rules and validate commit messages
 
 ##### Configure commitlint to use jira commits messages style config
 
@@ -36,6 +39,29 @@ module.exports = {
     }
   }
 }
+```
+
+## Rules
+
+`jira-task-id-max-length` - this rule check if jira task id length is loonger that the provided value.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is 8 chars
+// ❌ Bad commit messages
+git commit -m"IB-2121212121212121: My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121: My commit message body"
+```
+
+`jira-task-id-min-length` - this rule check if jira task id length is shorter that the provided value.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is 4 chars
+// ❌ Bad commit messages
+git commit -m"I-1: My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121: My commit message body"
+git commit -m"IB-21: My commit message body"
 ```
 
 ## Contributing

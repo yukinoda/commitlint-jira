@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-jira",
-  "description": "Shareable commitlint config enforcing Jira commits messages style",
+  "description": "A recomended config who contain preconfigured rules for jira commits messages style",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -13,7 +13,8 @@
     "jira-commitlint",
     "jira-style",
     "jira",
-    "multipack"
+    "multipack",
+    "commitlintplugin"
   ],
   "repository": {
     "type": "git",
