@@ -44,6 +44,7 @@ module.exports = {
 `jira-task-id-max-length` - this rule check if jira task id length is loonger that the provided value.
 
 ```bash
+// Preconfigured and recomended value in commitlint-config-jira is 8 chars
 // ❌ Bad commit messages
 git commit -m"IB-2121212121212121: My commit message body"
 // ✅ Good commit messages
@@ -53,6 +54,7 @@ git commit -m"IB-2121: My commit message body"
 `jira-task-id-min-length` - this rule check if jira task id length is shorter that the provided value.
 
 ```bash
+// Preconfigured and recomended value in commitlint-config-jira is 4 chars
 // ❌ Bad commit messages
 git commit -m"I-1: My commit message body"
 // ✅ Good commit messages
