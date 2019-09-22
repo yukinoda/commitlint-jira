@@ -1,7 +1,7 @@
 <div align="center">
   <img width="300" height="200"
     src="https://raw.githubusercontent.com/Gherciu/commitlint-jira/master/logo.png">
-  <h1>commitlint-plugin-jira</h1>
+  <h1>commitlint-plugin-jira-rules</h1>
   <p>A plugin that implement all jira commits messages style rules and validate commit messages. Part of <a href="https://github.com/Gherciu/commitlint-jira">commitlint-jira</a> monorepo</p>
 </div>
 
@@ -12,18 +12,18 @@
 ##### Install dependencies
 
 ```bash
-npm install --save-dev @commitlint/cli commitlint-plugin-jira commitlint-config-jira
+npm install --save-dev @commitlint/cli commitlint-plugin-jira-rules commitlint-config-jira
 ```
 
 - [commitlint-config-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-config-jira) - is a **recomended** config who contain preconfigured rules for jira commits messages style. See all rules in description below
-- [commitlint-plugin-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-plugin-jira) - is a plugin that implement all jira commits messages style rules and validate commit messages
+- [commitlint-plugin-jira](https://github.com/Gherciu/commitlint-jira/packages/commitlint-plugin-jira-rules) - is a plugin that implement all jira commits messages style rules and validate commit messages
 
 ##### Configure commitlint to use jira commits messages style config
 
 ```js
 // commitlint.config.js
 module.exports = {
-  plugins: ['commitlint-plugin-jira'],
+  plugins: ['commitlint-plugin-jira-rules'],
   extends: ['commitlint-config-jira'],
 }
 ```
