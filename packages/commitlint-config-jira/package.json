@@ -1,7 +1,7 @@
 {
   "name": "commitlint-config-jira",
   "description": "A recomended config who contain preconfigured rules for jira commits messages style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -37,6 +37,5 @@
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
   },
-  "dependencies": {},
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }
