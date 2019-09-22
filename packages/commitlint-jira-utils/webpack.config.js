@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    library: 'commitlintConfigJira',
+    library: 'commitlintJiraUtils',
     libraryTarget: 'umd',
     libraryExport: 'default',
     umdNamedDefine: true,
