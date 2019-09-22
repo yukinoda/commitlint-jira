@@ -7,11 +7,11 @@ import jiraTaskIdEmptyRuleResolver from './rules/jiraTaskIdEmptyRuleResolver'
 export const commitlintPluginJira: CommitlintPluginJira = {
   rules: {
     [commitlintJiraConstants.JIRA_RULES
+      .taskIdEmpty]: jiraTaskIdEmptyRuleResolver,
+    [commitlintJiraConstants.JIRA_RULES
       .taskIdMinLength]: jiraTaskIdMinLengthRuleResolver,
     [commitlintJiraConstants.JIRA_RULES
       .taskIdMaxLength]: jiraTaskIdMaxLengthRuleResolver,
-    [commitlintJiraConstants.JIRA_RULES
-      .taskIdEmpty]: jiraTaskIdEmptyRuleResolver,
     // [commitlintJiraConstants.JIRA_RULES.taskIdSeparator]: [
     //   2,
     //   'always',
