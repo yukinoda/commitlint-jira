@@ -1,6 +1,10 @@
 import { CommitlintPluginJira, TRuleFuncReturn } from '../@types'
 
-const jiraTaskIdMinLength: TRuleFuncReturn = (parsed, _when, value = 4) => {
+const jiraTaskIdMinLengthRuleResolver: TRuleFuncReturn = (
+  parsed,
+  _when,
+  value = 4,
+) => {
   const commitMessage = parsed.raw
   if (!commitMessage) return [false, 'Commit message should not be empty']
 
@@ -8,7 +12,11 @@ const jiraTaskIdMinLength: TRuleFuncReturn = (parsed, _when, value = 4) => {
   return [!isRuleValid, `body must not be shorter than ${value} characters`]
 }
 
-const jiraTaskIdMaxLength: TRuleFuncReturn = (parsed, _when, value = 8) => {
+const jiraTaskIdMaxLengthRuleResolver: TRuleFuncReturn = (
+  parsed,
+  _when,
+  value = 8,
+) => {
   const commitMessage = parsed.raw
   if (!commitMessage) return [false, 'Commit message should not be empty']
 
@@ -18,8 +26,8 @@ const jiraTaskIdMaxLength: TRuleFuncReturn = (parsed, _when, value = 8) => {
 
 export const commitlintPluginJira: CommitlintPluginJira = {
   rules: {
-    'jira-task-id-min-length': jiraTaskIdMinLength,
-    'jira-task-id-max-length': jiraTaskIdMaxLength,
+    'jira-task-id-min-length': jiraTaskIdMinLengthRuleResolver,
+    'jira-task-id-max-length': jiraTaskIdMaxLengthRuleResolver,
   },
 }
 
