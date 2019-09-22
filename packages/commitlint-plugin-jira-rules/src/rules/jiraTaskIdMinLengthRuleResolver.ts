@@ -1,15 +1,26 @@
-import { TRuleFuncReturn } from '../../@types'
+import { parseCommitMessage } from 'commitlint-jira-utils'
+import { TRuleResolver } from '../../@types'
 
-const jiraTaskIdMinLengthRuleResolver: TRuleFuncReturn = (
+const jiraTaskIdMinLengthRuleResolver: TRuleResolver = (
   parsed,
   _when,
-  value = 4,
+  value = 3,
 ) => {
-  const commitMessage = parsed.raw
-  if (!commitMessage) return [false, 'Commit message should not be empty']
+  const rawCommitMessage = parsed.raw
+  if (!rawCommitMessage) return [false, 'Commit message should not be empty']
 
-  const isRuleValid = commitMessage.split(':')[0].length < value
-  return [!isRuleValid, `body must not be shorter than ${value} characters`]
+  const commitMessage = parseCommitMessage(rawCommitMessage)
+
+  const nonValidTaskId = commitMessage.commitTaskIds.find(
+    taskId => taskId.length < value,
+  )
+
+  const isRuleValid = !nonValidTaskId
+
+  return [
+    isRuleValid,
+    `${nonValidTaskId} taskId must not be shorten than ${value} characters`,
+  ]
 }
 
 export default jiraTaskIdMinLengthRuleResolver

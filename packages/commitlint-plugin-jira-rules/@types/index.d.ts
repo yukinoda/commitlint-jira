@@ -1,4 +1,4 @@
-export type TRuleFuncReturn = (
+export type TRuleResolver = (
   parsed: Partial<{
     type: string
     scope: string
@@ -19,7 +19,7 @@ export type TRuleFuncReturn = (
 
 export interface CommitlintPluginJira {
   rules: {
-    [key: string]: TRuleFuncReturn | (number | string)[]
+    [key: string]: TRuleResolver
   }
 }
 declare const commitlintPluginJira: CommitlintPluginJira
