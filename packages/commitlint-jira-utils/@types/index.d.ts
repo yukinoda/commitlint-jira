@@ -17,6 +17,8 @@ export interface TCommitlintJiraConstants {
     start: string
     end: string
   }
+  UPPERCASE: string
+  LOWERCASE: string
 }
 
 export type TParseCommitMessage = (

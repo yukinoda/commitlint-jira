@@ -6,9 +6,9 @@ module.exports = {
   coverageThreshold: {
     global: {
       statements: 85,
-      branches: 59,
-      functions: 100,
-      lines: 90,
+      branches: 62,
+      functions: 92,
+      lines: 92,
     },
   },
   testRegex: 'tests/.*\\.test\\.ts$',

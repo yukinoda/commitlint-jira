@@ -76,6 +76,39 @@ git commit -m"IB-2121: My commit message body"
 git commit -m"IB-21: My commit message body"
 ```
 
+`jira-task-id-case` - this rule check if taskId is in provided case.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is "uppercase"
+// ❌ Bad commit messages
+git commit -m"ib-21: My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121, IB-21: My commit message body"
+git commit -m"IB-21: My commit message body"
+```
+
+`jira-task-id-separator` - this rule check if taskId header and footer is separated with provided value.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is "-"
+// ❌ Bad commit messages
+git commit -m"IB/21: My commit message body"
+git commit -m"IB_21 :My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-2121, IB-21: My commit message body"
+git commit -m"IB-21: My commit message body"
+```
+
+`jira-commit-status-case` - this rule check if commit status is in provided case.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is "uppercase"
+// ❌ Bad commit messages
+git commit -m"[wip]IB-21: My commit message body"
+// ✅ Good commit messages
+git commit -m"[WIP]IB-21: My commit message body"
+```
+
 ## Contributing
 
 1. Fork it!
