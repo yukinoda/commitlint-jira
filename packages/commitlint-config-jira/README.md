@@ -46,12 +46,13 @@ module.exports = {
 `jira-task-id-empty` - this rule check if commit message task id is not empty.
 
 ```bash
+// If your task do not have an id use a conventional task id e.g: IB-0000
 // ❌ Bad commit messages
 git commit -m"My commit message body"
 git commit -m":My commit message body"
 // ✅ Good commit messages
 git commit -m"IB-2121, IB-21: My commit message body"
-git commit -m"IB-21: My commit message body"
+git commit -m"IB-0000: My commit message body"
 ```
 
 `jira-task-id-max-length` - this rule check if jira task id length is loonger that the provided value.
