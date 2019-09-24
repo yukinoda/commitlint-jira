@@ -24,7 +24,7 @@ npm install --save-dev @commitlint/cli commitlint-plugin-jira-rules commitlint-c
 // commitlint.config.js
 module.exports = {
   plugins: ['commitlint-plugin-jira-rules'],
-  extends: ['commitlint-config-jira'],
+  extends: ['jira'],
 }
 ```
 
