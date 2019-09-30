@@ -7,9 +7,10 @@ import {
 } from './commitlintJiraConstants'
 
 const parseCommitMessage: TParseCommitMessage = commitMessage => {
-  const [rawCommitHeader, commitFooter] = commitMessage.split(
-    COMMIT_MESSAGE_SEPARATOR,
-  )
+  const commitMessageParts = commitMessage.split(COMMIT_MESSAGE_SEPARATOR)
+  const [rawCommitHeader, commitFooter] =
+    commitMessageParts.length === 2 ? commitMessageParts : ['', commitMessage]
+
   const rawCommitStatus = rawCommitHeader.split(COMMIT_STATUS_SEPARATORS.end)
   const commitStatus = rawCommitStatus.length
     ? rawCommitStatus[0].replace(COMMIT_STATUS_SEPARATORS.start, '')
