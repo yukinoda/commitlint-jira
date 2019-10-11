@@ -18,10 +18,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/commitlint-jira"
+    "url": "https://github.com/Gherciu/commitlint-jira"
   },
   "bugs": {
-    "url": "https://github.com/commitlint-jira/issues"
+    "url": "https://github.com/Gherciu/commitlint-jira/issues"
   },
   "main": "./build/index.js",
   "types": "./@types",
