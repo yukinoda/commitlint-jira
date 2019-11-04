@@ -5,8 +5,8 @@
   <p>A <b>recomended</b> config who contain preconfigured rules for jira commits messages style. Part of <a href="https://github.com/Gherciu/commitlint-jira">commitlint-jira</a> monorepo</p>
 </div>
 
-![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)
-![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)
+[![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
+[![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
 ## Getting started.
 

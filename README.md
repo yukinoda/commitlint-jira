@@ -5,8 +5,8 @@
   <p>Shareable commitlint config enforcing Jira commits messages style</p>
 </div>
 
-![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)
-![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)
+[![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
+[![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
 ## Getting started.
 
