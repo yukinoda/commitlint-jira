@@ -2,7 +2,7 @@
   <img width="300" height="200"
     src="https://raw.githubusercontent.com/Gherciu/commitlint-jira/master/logo.png">
   <h1>commitlint-jira</h1>
-  <p>Shareable commitlint config enforcing Jira commits messages style</p>
+  <p>commitlint-jira checks if your commit messages meet the Jira conventional commit format.</p>
 </div>
 
 [![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
