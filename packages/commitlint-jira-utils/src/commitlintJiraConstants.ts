@@ -17,3 +17,4 @@ export const COMMIT_STATUS_SEPARATORS = {
 }
 export const UPPERCASE = 'uppercase'
 export const LOWERCASE = 'lowercase'
+export const COMMIT_DESCRIPTION_SEPARATOR = '\n'

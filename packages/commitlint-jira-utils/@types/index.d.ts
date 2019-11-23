@@ -19,6 +19,7 @@ export interface TCommitlintJiraConstants {
   }
   UPPERCASE: string
   LOWERCASE: string
+  COMMIT_DESCRIPTION_SEPARATOR: string
 }
 
 export type TParseCommitMessage = (
