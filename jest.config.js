@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverageFrom: [
     'packages/**/*.(ts)',
-    '!packages/commitlint-jira-e2e-tests/**/*.test.(ts)',
+    '!packages/commitlint-jira-e2e-tests/**',
   ],
   coverageThreshold: {
     global: {
