@@ -2,7 +2,7 @@
   <img width="300" height="200"
     src="https://raw.githubusercontent.com/Gherciu/commitlint-jira/master/logo.png">
   <h1>commitlint-jira-utils</h1>
-  <p>A set of utils for commitlint-jira monorepo. Part of <a href="https://github.com/Gherciu/commitlint-jira">commitlint-jira</a> monorepo</p>
+  <p>A set of utils for commitlint-jira package. Part of <a href="https://github.com/Gherciu/commitlint-jira">commitlint-jira</a> monorepo</p>
 </div>
 
 [![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
