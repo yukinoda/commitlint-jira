@@ -111,6 +111,34 @@ git commit -m"[wip]IB-21: My commit message body"
 git commit -m"[WIP]IB-21: My commit message body"
 ```
 
+`jira-commit-message-separator` - this rule check if commit message separator match provided separator.
+
+```bash
+// Preconfigured and recomended value in commitlint-config-jira is ":"
+// ❌ Bad commit messages
+git commit -m"IB-21/ My commit message body"
+git commit -m"IB-21 - My commit message body"
+git commit -m"IB-21% My commit message body"
+// ✅ Good commit messages
+git commit -m"IB-21: My commit message body"
+```
+
+## Customise/Override `commitlint-jira-config` rules
+
+```diff
+// commitlint.config.js
+module.exports = {
+  plugins: ['commitlint-plugin-jira-rules'],
+  extends: ['jira'],
+  rules: {
+  // to Customise/Override a rule
++  'jira-task-id-max-length': [2, 'always', 10]
+  // to turn off a rule
++ 'jira-task-id-max-length': 0
+  },
+}
+```
+
 ## Contributing
 
 1. Fork it!

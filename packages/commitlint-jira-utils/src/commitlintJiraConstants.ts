@@ -5,6 +5,7 @@ export const JIRA_RULES = {
   taskIdEmpty: 'jira-task-id-empty',
   taskIdMaxLength: 'jira-task-id-max-length',
   taskIdMinLength: 'jira-task-id-min-length',
+  commitMessageSeparator: 'jira-commit-message-separator',
 }
 
 export const COMMIT_MESSAGE_SEPARATOR = ':'
