@@ -26,20 +26,6 @@ describe('jiraTaskIdProjectKeyRuleResolver', () => {
       jiraTaskIdProjectKeyRuleResolver(parsed, undefined, value)[0],
     ).toEqual(false)
   })
-  it('should return an error response if project key is undefined', () => {
-    const parsed = {
-      raw: 'IB-21: my commit message',
-    }
-    expect(jiraTaskIdProjectKeyRuleResolver(parsed, undefined)[0]).toEqual(
-      false,
-    )
-  })
-  it('should return an error response if project key is empty string', () => {
-    const parsed = {
-      raw: 'IB-21: my commit message',
-    }
-    expect(jiraTaskIdProjectKeyRuleResolver(parsed, '')[0]).toEqual(false)
-  })
   it('should return a success response if project key is set to false', () => {
     const parsed = {
       raw: 'IB-21: my commit message',
@@ -63,13 +49,12 @@ describe('jiraTaskIdProjectKeyRuleResolver', () => {
     expect(
       jiraTaskIdProjectKeyRuleResolver(parsed, undefined, ['PRJT', 'PRJT2'])[0],
     ).toEqual(true)
-  })
-  it('should return a success response if task id include one of the project key', () => {
-    const parsed = {
-      raw: 'PRJT2-21: my commit message',
-    }
     expect(
-      jiraTaskIdProjectKeyRuleResolver(parsed, undefined, ['PRJT', 'PRJT2'])[0],
+      jiraTaskIdProjectKeyRuleResolver(parsed, undefined, [
+        'PRJT3',
+        'PRJT2',
+        'PRJT',
+      ])[0],
     ).toEqual(true)
   })
 })

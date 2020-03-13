@@ -13,35 +13,35 @@ const jiraTaskIdProjectKeyRuleResolver: TRuleResolver = (
 
   let isRuleValid = false
   let nonValidTaskId = null
-  if (value === false || value === 'false') {
-    // Value is set to false, i.e. disabled the rule
+  if (!value) {
+    // Value is set to false, i.e. disabled the rule by default
     return [true]
   }
-
-  if (!value || value === true) {
-    // Value is falsey but not false (likely an empty project key) or set to true which is invalid
-    return [false, 'project key should be provided in configuration']
+  if (typeof value !== 'string' && !Array.isArray(value) && value) {
+    return [false, 'jira project key should be a string or an array of strings']
   }
 
-  if (typeof value === 'string' || typeof value === 'number') {
-    nonValidTaskId = commitMessage.commitTaskIds.find(
-      // Task ID should start with project key
-      taskId =>
-        taskId.toUpperCase().indexOf(value.toString().toUpperCase()) !== 0,
-    )
-    isRuleValid = !nonValidTaskId
-  } else {
-    nonValidTaskId = commitMessage.commitTaskIds.find(taskId => {
-      return !value.find(
-        val => taskId.toUpperCase().indexOf(val.toString().toUpperCase()) === 0,
-      )
-    })
-    isRuleValid = !nonValidTaskId
-  }
+  commitMessage.commitTaskIds.forEach(taskId => {
+    if (typeof value === 'string' && new RegExp(`^${value}`).test(taskId)) {
+      nonValidTaskId = taskId
+    }
+
+    if (Array.isArray(value)) {
+      value.forEach(projectKey => {
+        if (new RegExp(`^${projectKey}`).test(taskId)) {
+          nonValidTaskId = taskId
+        }
+      })
+    }
+  })
+
+  isRuleValid = !!nonValidTaskId
 
   return [
     isRuleValid,
-    `${nonValidTaskId} taskId must start with project key ${value}`,
+    `${nonValidTaskId} taskId must start with project key ${
+      typeof value === 'string' ? value : Array(value).join(' or ')
+    }`,
   ]
 }
 
