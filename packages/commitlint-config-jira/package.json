@@ -28,7 +28,7 @@
   "scripts": {
     "build": "rimraf ./build && cross-env NODE_ENV=production webpack",
     "watch": "cross-env NODE_ENV=development webpack -w",
-    "_postinstall": "opencollective-postinstall || exit 0"
+    "postinstall": "opencollective-postinstall || exit 0"
   },
   "devDependencies": {
     "cross-env": "^5.2.1",
