@@ -107,7 +107,7 @@ git commit -m"IB-21: My commit message body"
 
 ```bash
 // Accept a string or an array of strings, by default is disabled
-// For exmample ["PRJ1", "PRJ2"]
+// For example ["PRJ1", "PRJ2"]
 // ❌ Bad commit messages
 git commit -m"IB-21: My commit message body"
 // ✅ Good commit messages
