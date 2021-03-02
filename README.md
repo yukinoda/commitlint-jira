@@ -148,7 +148,7 @@ module.exports = {
   // to Customise/Override a rule
 +  'jira-task-id-max-length': [2, 'always', 10]
   // to turn off a rule
-+ 'jira-task-id-max-length': 0
++ 'jira-task-id-max-length': [0]
   },
 }
 ```
