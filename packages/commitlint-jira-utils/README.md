@@ -8,6 +8,8 @@
 [![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
+For Tips and [Advanced Usage](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa) you can read this [Blog Post](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa)
+
 ## Getting started.
 
 ##### Install dependencies
@@ -107,7 +109,7 @@ git commit -m"IB-21: My commit message body"
 
 ```bash
 // Accept a string or an array of strings, by default is disabled
-// For exmample ["PRJ1", "PRJ2"]
+// For example ["PRJ1", "PRJ2"]
 // ❌ Bad commit messages
 git commit -m"IB-21: My commit message body"
 // ✅ Good commit messages
@@ -139,6 +141,8 @@ git commit -m"IB-21: My commit message body"
 
 ## Customise/Override `commitlint-jira-config` rules
 
+For Tips and [Advanced Usage](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa) you can read this [Blog Post](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa)
+
 ```diff
 // commitlint.config.js
 module.exports = {
@@ -148,7 +152,7 @@ module.exports = {
   // to Customise/Override a rule
 +  'jira-task-id-max-length': [2, 'always', 10]
   // to turn off a rule
-+ 'jira-task-id-max-length': 0
++ 'jira-task-id-max-length': [0]
   },
 }
 ```
@@ -167,7 +171,7 @@ module.exports = {
 
 ## Author
 
-**[@Gherciu/commitlint-jira](https://github.com/Gherciu/commitlint-jira)** © [GHERCIU](https://github.com/Gherciu), Released under the [MIT](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE) License.<br>
-Authored and maintained by GHERCIU with help from contributors ([list](https://github.com/Gherciu/commitlint-jira/contributors)).
+**[@Gherciu/commitlint-jira](https://github.com/Gherciu/commitlint-jira)** Released under the [MIT](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE) License.<br>
+Authored and maintained by [GHERCIU GHEORGHE](https://github.com/Gherciu) with help from contributors ([list](https://github.com/Gherciu/commitlint-jira/contributors)).
 
 #### If you like this repository star⭐ and watch👀 on [GitHub](https://github.com/Gherciu/commitlint-jira)
