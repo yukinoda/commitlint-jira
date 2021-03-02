@@ -8,6 +8,8 @@
 [![GitHub](https://img.shields.io/github/license/Gherciu/commitlint-jira)](https://github.com/Gherciu/commitlint-jira/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
+For Tips and [Advanced Usage](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa) you can read this [Blog Post](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa)
+
 ## Getting started.
 
 ##### Install dependencies
@@ -138,6 +140,7 @@ git commit -m"IB-21: My commit message body"
 ```
 
 ## Customise/Override `commitlint-jira-config` rules
+For Tips and [Advanced Usage](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa) you can read this [Blog Post](https://gherciu-gheorghe.medium.com/how-to-write-correct-jira-commits-messages-33cd1c8e27aa)
 
 ```diff
 // commitlint.config.js
