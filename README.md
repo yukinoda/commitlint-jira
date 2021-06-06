@@ -36,7 +36,7 @@ module.exports = {
 Run the following in your terminal to create the proper hook.
 
 ```bash
-npx husky add .husky/commit-msg "commitlint --edit $1"
+npx husky add .husky/commit-msg 'commitlint --edit $1'
 ```
 
 For version 4 and under of Husky use the following syntax instead in your `package.json`.
